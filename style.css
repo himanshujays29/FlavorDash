@@ -101,25 +101,25 @@
 
 /* Servises Section */
 
-#servises{
-    margin: 34px;
+#servises {
+    margin: 11px 34px 34px 34px;
     display: flex;
 }
 
-#servises-container h1{
-    margin-top: 149px;
+#servises-container h1 {
+    margin-top: 135px;
 
 }
 
-#servises .box{
+#servises .box {
     border: 2px solid brown;
-    padding: 34px;
-    margin: 3px 6px;
+    padding: 28px;
+    margin: 3px 5px;
     border-radius: 25px;
     background: #f2f2f2;
 }
 
-#servises .box img{
+#servises .box img {
     height: 120px;
     margin: auto;
     display: block;
@@ -138,11 +138,11 @@
     position: relative;
 }
 
-#client-section::before{
+#client-section::before {
     content: " ";
     position: absolute;
     background: url('images/bgimage1.png');
-    height: 80%;
+    height: 85%;
     width: 100%;
     z-index: -1;
     opacity: 0.3;
@@ -158,18 +158,18 @@
     align-items: center;
 }
 
-#clients img{
+#clients img {
     height: 104px;
 }
 
 
 /* Contact Section */
 
-#contact{
+#contact {
     position: relative;
 }
 
-#contact::before{
+#contact::before {
     content: " ";
     position: absolute;
     width: 100%;
@@ -179,8 +179,93 @@
     background: url('images/contactus.png') no-repeat center center/cover;
 }
 
-#contact h1{
+#contact h1 {
     margin-top: -53px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+.cta {
+    border-radius: 40px;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: 2x solid black;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #61b5cf;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
 }
 
 /* Footer Section */
@@ -253,4 +338,3 @@ footer {
 .center {
     text-align: center;
 }
-
